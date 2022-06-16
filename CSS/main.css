@@ -1,0 +1,12 @@
+#navbar {
+    z-index: 1;
+}
+
+.carousel-item {
+    height: 70vh;
+}
+
+.carousel-item img {
+    display: flex;
+    background-size: cover;
+}
