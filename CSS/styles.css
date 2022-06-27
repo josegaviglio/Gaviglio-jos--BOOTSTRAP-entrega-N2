@@ -180,6 +180,12 @@ footer {
     background-color: rgb(230, 230, 230);
 }
 
+footer img {
+    height: 2rem;
+    width: 2rem;
+    margin: 10px;
+}
+
 footer p {
     margin: 0%;
     padding: 12px;
