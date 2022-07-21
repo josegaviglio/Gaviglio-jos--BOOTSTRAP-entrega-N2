@@ -204,77 +204,128 @@ footer .container {
 
 /* CONTACTO */
 
+.bodyContacto {
+    background: #181818;
+    color: #fff;
+    font-family: sans-serif;
+}
 
-#hero-contacto {
+.contentContacto {
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logoContacto {
+    padding: 1em;
+    text-align: center;
+    font-size: 3em;
+    color: #1794ca;
+}
+
+.contact-wrapper {
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, .3);
+}
+
+.contact-wrapper>* {
+    padding: 1em;
+}
+
+.contact-form {
+    background: #222222;
+}
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form .block {
+    grid-column: 1/3;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+
+
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: #fff;
+    border-bottom: 1px solid #1EB3F3;
+}
+
+.contact-form form button {
+    background: #1EB3F3;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+.contact-form form button:hover,
+.contact-form form button:focus {
+    background: #1794ca;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+.contact-info {
+    background: #000;
+}
+
+.contact-info h4,
+.contact-info ul,
+.contact-info p {
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-info ul li {
+    padding: .3em;
+}
+
+.contactIframe {
     display: flex;
-    align-items: center;
     justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    height: 70vh;
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 1.0), rgba(0, 0, 0, 0.5)), url(../images/redessociales.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    align-items: center;
+    padding: 2em;
+    margin: auto;
 }
-
-#hero-contacto h1 {
-    color: white;
-}
-
-#redes-sociales {
-    background-color: rgb(30, 30, 30);
-    color: white;
-    text-align: center;
-}
-
-#redes-sociales .container {
-    padding: 150px 15px;
-
-}
-
-#redes-sociales h2 {
-    margin: 30px;
-}
-
-#redes-sociales .carta-contacto {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-.carta-contacto:first-child {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wpp.jpg);
-
-}
-
-.carta-contacto:nth-child(2) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/facebook.jpg);
-
-}
-
-.carta-contacto:nth-child(3) {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/instagram.jpg);
-
-}
-
-.carta-contacto:last-child {
-    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/email.jpg);
-
-}
-
-
-/* Y MODIFICAR CARTAS DE CONTACTO POR ICONOS DE REDES SOCIALES */
-
-/* ----------------------------- */
-
 
 /* MARCAS ASOCIADAS */
+.h1Marcas {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
 
 /* PORTFOLIO */
+
+.gridContainerPort {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
 
 
 /* ----------------------------- */
@@ -355,26 +406,42 @@ footer .container {
 
     /* CONTACTO */
 
-    #redes-sociales .redes {
-        display: flex;
-        justify-content: center;
+    .bodyContacto {
+        padding: 0 4rem;
     }
 
-    #redes-sociales p {
-        display: block;
-        margin-bottom: 30px;
+    .navbar {
+        top: 0;
     }
 
-    #redes-sociales h3 {
-        margin-top: 0px;
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
 
-    #redes-sociales .carta-contacto {
-        padding: 50px;
+    .contact-wrapper {
+        padding: 2em;
+    }
+
+    .contact-info h4,
+    .contact-info ul,
+    .contact-info p {
+        padding: 2em;
+        text-align: left;
     }
 
     /* MARCAS ASOCIADAS */
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
 
     /* PORTFOLIO */
+
+    .gridContainerPort {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
 }
